@@ -1,0 +1,57 @@
+.entrada {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+}
+
+.contenido {
+    padding: 2rem;
+
+}
+
+.contenido h3 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.fecha {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.enlace {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: backgroud-color;
+    transition-duration: .3s;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.texto {
+    white-space: pre-wrap;
+}

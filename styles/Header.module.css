@@ -1,0 +1,147 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 /.8), rgb(0 0 0 /.7)), url(../public/img/header.jpg);
+    padding: 5rem 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(min-width: 768px) {
+    .barra {
+        flex-direction: row;
+    }
+}
+
+
+
+.nav {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+@media(min-width: 768px) {
+    .nav {
+        margin-top: 0;
+    }
+}
+
+
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+.modelo {
+    color: var(--blanco);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .modelo {
+        text-align: left;
+        width: 60%;
+    }
+}
+
+.modelo h2 {
+    font-size: 6rem;
+}
+
+.texto {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 2.2rem;
+}
+
+.precio {
+    font-size: 6rem;
+    color: var(--primary);
+    font-weight: 900;
+    line-height: 0;
+}
+
+.enlace {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--blanco);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: backgroud-color;
+    transition-duration: .3s;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.guitarra {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+    .guitarra {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -8px;
+        animation-name: showImage;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.carrito {
+    display: none;
+}
+
+@media(min-width: 1040px) {
+    .carrito {
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+
+@keyframes showImage {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
